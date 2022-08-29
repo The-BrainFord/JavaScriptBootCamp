@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Strings</h2>
+
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p>
+
+<p id="demo"></p>
+
+<script>
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"'; 
+
+document.getElementById("demo").innerHTML =
+answer1 + "<br>" + answer2 + "<br>" + answer3; 
+</script>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The slice() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="demo1"></p>
+
+<script>
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demo1").innerHTML = str.slice(7,13); 
+</script>
+
+<p>Template literals allows multiline strings:</p>
+
+<p id="demo3"></p>
+
+<p>Template literals are not supported in Internet Explorer.</p>
+
+<script>
+let text =
+
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+
+document.getElementById("demo3").innerHTML = text;
+</script>
+</body>
+</html>
